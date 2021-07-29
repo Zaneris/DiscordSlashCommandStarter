@@ -12,6 +12,9 @@ namespace zBot
 
         private static IHostBuilder CreateHostBuilder() =>
             Host.CreateDefaultBuilder()
-                .CreateBotHostDefaults(botBuilder => { botBuilder.UseStartup<Startup>(); });
+                .CreateBotHostDefaults(botBuilder =>
+                {
+                    botBuilder.UseStartup<Startup>();
+                });
     }
 }
